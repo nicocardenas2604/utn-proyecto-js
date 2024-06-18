@@ -140,3 +140,24 @@ h4 {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.586);
 }
+
+
+@media (max-width: 880px) {
+    .casas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+    }
+
+    .casas div {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
