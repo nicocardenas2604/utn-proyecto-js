@@ -14,6 +14,7 @@ body {
     background-image: url(../assets/dining-room-5114247_1920.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -117,16 +118,25 @@ footer {
 
 h4 {
     color: var(--primary-color);
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
+    font-size: large;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
 }
 
 .grid img {
     max-width: 30vh;
     height: auto;
+}
+
+.grid div {
+    border: white solid 1px;
+    margin: 30px 30px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.586);
 }
