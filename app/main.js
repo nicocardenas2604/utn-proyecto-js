@@ -22,9 +22,12 @@ fetch("https://hp-api.onrender.com/api/characters")
       } else {
         estado = "fallecido";
       }
+      let imagen = personaje.image
+        ? personaje.image
+        : "../assets/foto-perfil-generica.png";
 
       $divCards.innerHTML += `<div> <h4>${personaje.name}</h4>
-      <img src="${personaje.image}" alt="imagen de ${personaje.name}">
+      <img src="${imagen}" alt="imagen de ${personaje.name}">
        <p>Actor: ${personaje.actor}</p>
         <p>Genero: ${genero}</p>
          <p>Casa: ${personaje.house}</p>
