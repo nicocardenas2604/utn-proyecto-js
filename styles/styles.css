@@ -112,3 +112,21 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/*personajes*/
+
+h4 {
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.grid img {
+    max-width: 30vh;
+    height: auto;
+}
